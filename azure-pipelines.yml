@@ -2,6 +2,13 @@
 - task: FortifySCA@7
   inputs:
     applicationType: 'other'
+    fortifyBuildId: 'a'
+    fortifyScanType: 'LocalScan'
+    runFortifyUpload: true
+    fortifyServerName: 'SSC'
+- task: FortifySCA@7
+  inputs:
+    applicationType: 'other'
     fortifyBuildId: 'A'
     fortifyScanType: 'LocalScan'
     runFortifyUpload: true

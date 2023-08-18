@@ -1,4 +1,13 @@
 # PHP
+- task: FortifySCA@7
+  inputs:
+    applicationType: 'other'
+    fortifyBuildId: 'A'
+    fortifyScanType: 'LocalScan'
+    runFortifyUpload: true
+    fortifyServerName: 'SSC'
+    fortifyApplicationName: 'Hackazon'
+    fortifyApplicationVersion: 'Base'
 # Test and package your PHP project.
 # Add steps that run tests, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
